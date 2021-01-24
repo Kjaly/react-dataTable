@@ -1,0 +1,97 @@
+export const COLUMNS = [
+  {
+    Header:'Id',
+    accessor:'id'
+  },
+  {
+    Header:'Имя',
+    accessor:'firstName'
+  },
+  {
+    Header:'Фамилия',
+    accessor:'lastName'
+  },
+  {
+    Header:'Почта',
+    accessor:'email'
+  },
+  {
+    Header:'Телефон',
+    accessor:'phone'
+  },
+  {
+    Header:'Улица',
+    accessor:'adress.streetAddress'
+  },
+  {
+    Header:'Город',
+    accessor:'adress.city'
+  },
+  {
+    Header:'Штат',
+    accessor:'adress.state'
+  },
+  {
+    Header:'Индекс',
+    accessor:'adress.zip'
+  },
+  {
+    Header:'Описание',
+    accessor:'description'
+  },
+
+]
+
+export const GROUPED_COLUMNS = [
+  {
+    Header:'Id',
+    accessor:'id'
+  },
+  {
+    Header:'Полное имя',
+    columns:[
+      {
+        Header:'Имя',
+        accessor:'firstName'
+      },
+      {
+        Header:'Фамилия',
+        accessor:'lastName'
+      },
+    ]
+  },
+  {
+    Header:'Почта',
+    accessor:'email'
+  },
+  {
+    Header:'Телефон',
+    accessor:'phone'
+  },
+  {
+    Header:'Адрес',
+    columns: [
+      {
+        Header:'Улица',
+        accessor:'adress.streetAddress'
+      },
+      {
+        Header:'Город',
+        accessor:'adress.city'
+      },
+      {
+        Header:'Штат',
+        accessor:'adress.state'
+      },
+      {
+        Header:'Индекс',
+        accessor:'adress.zip'
+      },
+    ]
+  },
+  {
+    Header:'Описание',
+    accessor:'description'
+  },
+
+]
